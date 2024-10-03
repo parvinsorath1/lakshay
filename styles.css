@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better layout control */
+}
+header {
+    background-color: #ffffff; /* Header ka background color */
+    padding: 20px;
+    border-bottom: 4px solid #007BFF; /* Border ka color aur thickness change kiya */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Shadow ko aur thoda bada aur halka color diya */
+    position: relative;
+    z-index: 10; /* Ensure header ke upar shadow dikhai de */
+}
+
+.logo img {
+    width: 120px;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ac0d0d;
+    font-weight: bold;
+    position: relative; /* Added for hover effect */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change color on hover */
+}
+nav a:hover {
+    color: #FF5733; 
+    transition: color 0.3 ease-in-out;
+}
+
+#home {
+    background-color: #d1e7fd; 
+    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #292326;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+#home button {
+    background-color: #1c75ce;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#home button:hover {
+    background-color: #2014c4;
+}
+
+#about {
+    background-color: #d1e7fd; 
+    padding: 40px 20px; 
+    color: #2f2f2f; 
+    text-align: center; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+#about h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px; 
+    margin: 0 auto;
+    font-weight: 400; 
+}
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #1c75ce;
+    margin: 20px 0; 
+}
+
+#players {
+    background-color: #e9ecef; 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+#players h2 {
+    font-size: 2.5rem; 
+    color: #1c75ce; 
+    margin-bottom: 20px; 
+}
+
+#players p {
+    font-size: 1.2rem; 
+    margin-bottom: 40px; 
+}
+
+.player-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+}
+
+.player {
+    text-align: center;
+}
+
+.player img {
+    width: 150px;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.player p {
+    font-weight: bold;
+    margin-top: 10px; 
+    color: #292326; 
+}
+
+@media (max-width: 600px) {
+    .player-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+#contact {
+    background-color: #f9f9f9; 
+    padding: 40px 20px; 
+    text-align: center; 
+    border-top: 2px solid #1c75ce; 
+    border-bottom: 2px solid #1c75ce; 
+}
+
+#contact h2 {
+    font-size: 2.5rem; 
+    color: #1c75ce; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+#contact p {
+    font-size: 1.2rem; 
+    color: #333; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+footer {
+    background-color: #007BFF; /* Footer ka background color */
+    color: #ffffff; /* Footer text color white rakha */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Footer ko thoda shadow diya */
+}
+
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-info {
+    margin: 10px; 
+}
